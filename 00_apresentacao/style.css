@@ -1,0 +1,140 @@
+/* ================================================
+   PÁGINA DE APRESENTAÇÃO — Profe. Berssa
+   IFPR · CRPG · Desenvolvimento Web II · 2026
+   ================================================ */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #010000;
+  line-height: 1.8;
+}
+
+/* ── CABEÇALHO ── */
+header {
+  background: linear-gradient(135deg, #3b579d, #2a4080);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.header-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.header-sub {
+  color: #f0b341;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+/* ── CONTEÚDO PRINCIPAL ── */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.apresentacao {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ── FOTO ── */
+.foto-container {
+  flex-shrink: 0;
+}
+
+.foto-perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #3b579d;
+  display: block;
+}
+
+/* ── TEXTO ── */
+.texto-container {
+  flex: 1;
+}
+
+.texto-container h2 {
+  color: #3b579d;
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.texto-container p {
+  color: #010000;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* ── CARDS DE INFORMAÇÃO ── */
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #e8edf5;
+  border-left: 4px solid #3b579d;
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+
+.card-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.card-texto {
+  font-size: 14px;
+  color: #010000;
+}
+
+/* ── RODAPÉ ── */
+footer {
+  background-color: #3b579d;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* ── RESPONSIVIDADE ── */
+@media (max-width: 650px) {
+  .apresentacao {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card {
+    justify-content: center;
+  }
+}
